@@ -1,0 +1,1010 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:200,200i,300,300i,400,400i,600,700,700i,900');
+ @import url("font-awesome.min.css");
+
+body {
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none!important;
+}
+:hover, a, h1, h2, h3, h4, h5, h6, li, p, ul {
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+color: #777;
+}
+::-moz-placeholder { /* Firefox 19+ */
+color: #777;
+}
+:-ms-input-placeholder { /* IE 10+ */
+color: #777;
+}
+:-moz-placeholder { /* Firefox 18- */
+color: #777;
+}
+/* Common Css */
+.no-margin {
+    margin: 0!important;
+    padding: 0!important
+}
+.center {
+    margin: 0 auto!important;
+    display: table!important;
+    float: none!important
+}
+.flexRow {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.flexCol {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.fex {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+.mainDev {
+    border-top: 5px solid #85b825;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: block;
+    font-family: 'Titillium Web', sans-serif;
+    /*    overflow: hidden;*/
+}
+.btnStyle {
+    background: #6f9e16;
+    border: 0;
+    color: #fff;
+    border-radius: 0;
+    padding: 12px 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.formStyle input{
+    margin-bottom: 15px;
+    height: 42px;
+}
+.formStyle h4 {
+    font-weight: bold;
+    margin: 30px 0 10px;
+    text-transform: uppercase;
+    color: #77a81b;
+}
+.dlogo img {
+    display: table;
+    margin: 15px auto;
+    width: 180px;
+}
+.online_dev {
+    background-color: rgb(245, 246, 247);
+    box-shadow: inset 6px 10.392px 14px 0px rgba(241, 241, 241, 0.294);
+    padding: 40px 0;
+}
+.redlogo {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a10707+0,950909+22,6a1212+72,591515+100 */
+    background: #a10707; /* Old browsers */
+    background: -moz-linear-gradient(top, #a10707 0%, #950909 22%, #6a1212 72%, #591515 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #a10707 0%, #950909 22%, #6a1212 72%, #591515 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right top, #94ca2e, #87bb26, #7bad1e, #6f9e16, #63900d);; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a10707', endColorstr='#591515', GradientType=0 ); /* IE6-9 */
+    color: #fff;
+    text-align: center;
+}
+.wlogo {
+    position: relative;
+    padding: 15px 0;
+}
+.wlogo:before {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    background: transparent;
+    width: 70%;
+    height: 100%;
+    border: 5px solid #fff;
+    border-top: 0;
+    margin: 0 auto;
+    right: 0;
+}
+.loghead {
+    position: relative;
+    overflow: hidden;
+}
+.loghead h2 {
+    margin: 15px 0;
+    font-size: 30px;
+    line-height: 38px;
+    font-weight: 700;
+}
+.logInForm {
+    position: relative;
+    background-color: rgb(245, 246, 247);
+    box-shadow: inset 6px 10.392px 14px 0px rgba(241, 241, 241, 0.294);
+}
+.logform {
+    border-width: 1px;
+    border-color: rgb(215, 215, 215);
+    border-style: solid;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.5px 2.598px 15px 0px rgba(0, 0, 0, 0.051);
+    overflow: hidden;
+    padding: 0 60px 15px;
+    border: 1px solid #ccc;
+    border-top: 0;
+}
+.logform p {
+    text-align: center;
+    margin: 25px 0;
+    color: #777777;
+}
+.logform .form-control {
+    border-width: 1px;
+    border-color: rgb(215, 215, 215);
+    border-style: solid;
+    background-color: rgb(243, 243, 243);
+    height: 50px;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.logform .button1 {
+    position: relative;
+    margin: 15px 0;
+}
+.logform input.submit {
+    border-width: 1px;
+    border-color: rgb(215, 215, 215);
+    border-style: solid;
+    background-color: rgb(243, 243, 243);
+    height: 56px;
+    border-radius: 0;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #5cb85c;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+}
+.logform .forgotPass a {
+    color: #ff0000;
+    font-size: 12px;
+    font-weight: 300;
+}
+.logform .remember a {
+    color: #337ab7;
+    font-size: 14px;
+    font-weight: 700;
+}
+.logform .button1.use input.submit {
+    background: #d9534f;
+}
+.foter {
+    padding: 30px 20px;
+}
+.foter a, .foter p {
+    font-size: 14px;
+    color: #999999;
+    font-weight: 700;
+}
+/* Dashboard Login Ends Here  */
+
+.board_head {
+    position: relative;
+    padding: 30px 0;
+}
+
+
+.custom-search-input {
+    position: relative;
+    width: 100%;
+}
+
+.custom-search-input .input-group .form-control {
+    border-radius: 40px;
+    background-color: #f8f8f8;
+    height: 50px;
+    box-shadow: none;
+    outline: none !important;
+    font-size: 14px;
+    color: #000;
+    padding: 0 37px 0 16px;
+    border: 1px solid #f1f1f1;
+}
+.custom-search-input .input-group button.btn {
+    background: transparent;
+    color: #e5e5e5;
+    position: absolute;
+    right: 8px;
+    top: 6px;
+    z-index: 7;
+    outline: none;
+    font-size: 17px;
+}
+
+.header-top {  
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.header-top li {
+    border-left: 1px solid #f1f1f1;
+    line-height: 80px;
+    padding: 0 29px;
+
+}
+
+.header-rightside .media-body{
+    width: auto;
+    vertical-align: middle;
+}
+
+.header-top li.dropdown  h5 { 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right top, #94ca2e, #87bb26, #7bad1e, #6f9e16, #63900d);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 26px;
+
+}
+.header-top p {
+    color: #bfbfbf;
+    font-size: 14px;
+    margin: 0;
+    text-align: left;
+}
+
+.header-top li.dropdown {
+border: 0;
+line-height: inherit;
+padding: 0;
+padding-right: 45px;
+position: relative;
+}
+
+.header-top li.dropdown i { 
+    position: absolute;
+    right: 0;
+    top: 20px;
+    bottom: 0;
+    color: #bfbfbf;
+    font-size: 22px;
+    line-height: 50px;
+
+}
+
+.header-top .dropdown-menu {
+    left: inherit;
+    right: 0;
+}
+.header-top .dropdown-menu li { 
+
+padding: 0 ;
+}
+.header-top .dropdown-menu > li > a {
+        padding: 12px 16px;
+        font-size: 14px;
+        font-weight: 500;
+        color: #000;
+}
+
+.dashbody {
+  background-color: rgb(245, 246, 247);
+  box-shadow: inset 6px 10.392px 14px 0px rgba(241, 241, 241, 0.294);  
+}
+
+
+.dashbody ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+
+/* User Body  */
+.user-dashboard {
+    position: relative;
+    padding: 50px;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.user-dashboard h1 {
+    color: #292929;
+    font-size: 40px;
+    text-align: center;
+    margin: 15px 0 40px;
+    font-weight: 600;
+}
+
+
+.infoBox {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 1.5px 2.598px 15px 0px rgba(0, 0, 0, 0.051);
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 30px;  
+  position: relative;
+}
+
+
+.infoBox .imgox {
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.infoBox h2 {
+    font-size: 22px;
+    margin: 0;
+    color: #777777;
+}
+
+.infoBox p {
+    font-size: 16px;
+    margin: 0;
+    color: #777777;
+}
+
+.infoBox a.btn {
+    background: #f0f0f0;
+    color: #777777;
+    font-size: 16px;
+    width: 100%;
+    margin: 20px 0 0;
+    border-radius: 0;
+    padding: 10px 0;
+}
+
+.infoBox h3 {
+    font-size: 25px;
+    margin: 0;
+    color: #777777;
+}
+
+.botText {
+    margin-top: 50px;
+}
+
+.margin30 {
+    margin-top: 30px;
+}
+
+
+/* Courses Panel */
+
+
+section.tabs_sec {
+    position: relative;
+    box-shadow: 0px 0px 7px #00000045;
+}
+
+.tabs_sec .nav-tabs {
+background-color: rgb(255, 255, 255);
+  box-shadow: 1.5px 2.598px 15px 0px rgba(0, 0, 0, 0.051);
+
+}
+.tabs_sec .nav-tabs>li {
+    margin-left: 15px;
+}
+
+.tabs_sec .nav-tabs>li>a { 
+      font-weight: 300;
+    padding: 20px 8px;
+    font-size: 18px;
+    color: #777777;
+    margin: 0;
+    border: 0;
+    border-bottom: 2px solid transparent;
+
+}
+.tabs_sec .nav-tabs>li.active>a, .tabs_sec .nav-tabs>li.active>a:focus, .tabs_sec .nav-tabs>li.active>a:hover {
+  color: #777777;
+   border: 0;
+   border-bottom: 2px solid #94ca2e;
+}
+.tabs_sec .tab-content {
+padding: 20px 10px;
+background: #ffffff;
+}
+
+
+.coursein {
+    position: relative;
+}
+.coursein .panel-title>a:before {
+    float: left !important;
+    font-family: FontAwesome;
+    content: "\f068";
+
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right top, #94ca2e, #87bb26, #7bad1e, #6f9e16, #63900d);
+
+    font-size: 14px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 8px 0;
+    border-radius: 50%;
+    border: 1px solid #7d0e0e;
+    left: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 18px;
+}
+.coursein .panel-heading {
+    background: #f1f1f1;
+    padding: 0;
+    margin-bottom: 12px;
+    border-radius: 0;
+}
+.coursein .panel-body {
+    padding: 15px 20px 20px;
+    border-top: none !important;
+    box-shadow: none;
+    margin-bottom: 20px;
+}
+.coursein .panel-heading a {
+    color: #777777;
+    font-weight: 600;
+    font-size: 22px;
+    width: 100%;
+    padding: 23px 10px 20px 65px;
+    display: inline-flex;
+    position: relative;
+    border-radius: 14px;
+}
+.coursein .panel-body p {
+    font-size: 16px;
+    color: #777777;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+}
+.coursein .panel-heading a[aria-expanded=true] {
+    padding: 23px 10px 20px 65px;
+    display: inline-flex;
+    width: 100%;
+}
+.coursein .panel {
+    box-shadow: none;
+    border-color: transparent;
+    border-radius: 0;
+    border: 0;
+}
+.coursein .collapse.show {
+    display: block;
+    margin-bottom: 30px;
+}
+.coursein .heading {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.coursein .heading h5 {
+    color: #2f2f2f;
+    font-size: 30px;
+    margin-bottom: 0;
+}
+.coursein .heading h1 {
+    font-weight: bold;
+    font-size: 50px;
+    color: #333333;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+.coursein .heading p {
+    line-height: 25px;
+    font-size: 14px;
+    color: #656565;
+    font-weight: 500;
+}
+.coursein .panel-title>a.collapsed:before {
+    content: "\f067";
+}
+
+
+h4.media-heading {
+    font-size: 25px;
+    color: #292929;
+    font-weight: 600;
+    margin: 0;
+}
+
+.coursein .media-body {
+    vertical-align: middle;
+}
+
+
+/*  My CSS */
+.foter.dash {
+    padding: 30px 0;
+}
+
+.bioText {
+    text-align: left;
+}
+
+.bioText h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #777777;
+}
+.bioText li , .bioText p{ 
+    font-size: 16px;
+    color: #777777;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 0;
+}
+
+
+.current_course {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+
+.proceslines {
+  position: relative;
+  padding: 20px;
+  background: #fff;
+}
+
+.progress {
+    background: #f0eced;
+}
+
+
+.proceslines h2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 22px;
+  margin-top: 10px;
+  color: #777777;
+  margin-bottom: 20px;
+}
+
+.proceslines h3 {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 22px;
+  margin-top: 15px;
+  color: #777777;
+}
+
+.proceslines .progress {
+  height: 9px;
+}
+
+.proceslines .progress-bar {
+  background: #94ca2e;
+}
+
+
+.myCurrent {
+    position: relative;
+    background: #fff;
+   padding: 15px 10px;
+}
+
+.myCurrent h2 {
+    font-size: 30px;
+    font-weight: bold;
+    color: #777777;
+    margin: 20px 10px;
+}
+
+
+.myCurrent  .cimt  { 
+    padding: 20px 50px;
+    text-align: center;
+    margin: 10px;
+    min-height: 150px;
+    border: 1px solid #000;
+
+}
+.myCurrent .slick-current .cimt  {
+    background: #a10707;
+    background: -moz-linear-gradient(top, #a10707 0%, #950909 22%, #6a1212 72%, #591515 100%);
+    background: -webkit-linear-gradient(top, #a10707 0%, #950909 22%, #6a1212 72%, #591515 100%);
+    background: linear-gradient(to right top, #94ca2e, #87bb26, #7bad1e, #6f9e16, #63900d);;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a10707', endColorstr='#591515', GradientType=0 );
+    color: #fff;
+  
+
+}
+
+
+.myCurrent .slick-current .cimt img  { 
+    filter: brightness(0) invert(1);
+    -webkit-filter: brightness(0) invert(1);
+}
+
+.myCurrent .slick-initialized .slick-slide {
+outline: none;
+}
+
+
+.course_tim .row {
+    padding: 15px 0 10px;
+    border-top: 1px solid #ccc;
+}
+.course_tim .row:last-child {
+border-bottom: 1px solid #ccc;
+
+}
+.course_tim {
+    margin: 40px 50px;
+}
+
+.course_tim  p {
+    font-size: 18px;
+    color: #777777;
+    margin: 0;
+    line-height: 24px;
+}
+
+.course_tim h3 { 
+    margin: 0;
+    font-size: 21px;
+    color: #9c9c9c;
+}
+
+.course_tim h3 i { 
+margin-right: 10px;
+    }
+ 
+
+
+
+/* The container */
+.myckek {
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(to right top, #94ca2e, #87bb26, #7bad1e, #6f9e16, #63900d);
+    font-size: 20px;
+    font-weight: bold;
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.myckek input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.myckek .checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: transparent;
+  border-radius: 50%;
+  font-size: 12px;
+  border: 1px solid #e9e9e9;
+  border-radius: 100%;
+}
+
+/* On mouse-over, add a grey background color */
+.myckek:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.myckek input:checked ~ .checkmark {
+     background: #a10707;
+    background: -moz-linear-gradient(top, #a10707 0%, #950909 22%, #6a1212 72%, #591515 100%);
+    background: -webkit-linear-gradient(top, #a10707 0%, #950909 22%, #6a1212 72%, #591515 100%);
+    background: linear-gradient(to right top, #94ca2e, #87bb26, #7bad1e, #6f9e16, #63900d);;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a10707', endColorstr='#591515', GradientType=0 );
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.myckek .checkmark:after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.myckek input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.myckek .checkmark:after {
+    top: 8px;
+    left: 7px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+
+.Rectangle_7_copy_8 {
+  background-image: -moz-linear-gradient( 90deg, rgb(89,21,21) 0%, rgb(161,7,7) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(89,21,21) 0%, rgb(161,7,7) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(89,21,21) 0%, rgb(161,7,7) 100%);
+  
+  position: absolute;
+  left: 533px;
+  top: 967px;
+  width: 956px;
+  height: 208px;
+  z-index: 103;
+}
+.preCourse {
+    box-shadow: 1.5px 2.598px 15px 0px rgba(0, 0, 0, 0.051);
+    background: #fff;
+}
+
+.preCourse h2 {
+    background: #a10707;
+    background: -moz-linear-gradient(top, #a10707 0%, #950909 22%, #6a1212 72%, #591515 100%);
+    background: -webkit-linear-gradient(top, #a10707 0%, #950909 22%, #6a1212 72%, #591515 100%);
+    background: linear-gradient(to right top, #94ca2e, #87bb26, #7bad1e, #6f9e16, #63900d);;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a10707', endColorstr='#591515', GradientType=0 );
+    color: #fff;
+    font-size: 33px;
+    padding: 16px 20px;
+}
+
+.preCourse .preTxt {
+    padding: 10px 20px 40px;
+    color: #777777;
+    font-size: 24px;
+}
+
+.stuProle .flexCol  {
+        align-items: flex-start;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1.5px 2.598px 15px 0px rgba(0, 0, 0, 0.051);
+}
+
+.stuProle .flexCol .infoBox  { 
+    box-shadow: none;
+}
+
+/* BEGIN: surveySec css */
+
+.surveySec {
+  padding: 0px 0;
+}
+
+.surveySec .surveyHead {
+  text-align: center;
+  margin: 0 0 40px;
+}
+
+.surveySec .surveyHead h1 {
+    color: #292929;
+    font-size: 40px;
+    text-align: center;
+    margin: 15px 0 40px;
+    font-weight: 600;
+}
+
+.surveySec .surveyHead h1:before {
+  position: absolute;
+  left: -60px;
+  background: url(../images/title-lines.png) no-repeat left;
+  width: 47px;
+  content: "";
+  height: 5px;
+  top: 15px;
+}
+
+.surveySec .surveyHead h1:after {
+  position: absolute;
+  right: -60px;
+  background: url(../images/title-lines.png) no-repeat left;
+  width: 47px;
+  height: 5px;
+  content: "";
+  top: 15px;
+}
+
+.surveySec .surveyHead img {
+  margin: 20px auto 0;
+}
+
+.surveySec .surveyHead p {
+  margin-bottom: 50px;
+  font-weight: 400;
+  color: #000;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.surveySec .surveyHead input[type="text"] {
+  height: 45px;
+  border: 0;
+  border-radius: 0;
+  border-bottom: 1px solid #000;
+  box-shadow: none;
+}
+
+.surveySec .surveyForm {
+  border: 1px solid #e4e4e4;
+  padding: 60px 80px;
+}
+
+.surveySec .surveyForm h3 {
+  color: #000;
+}
+
+.surveySec .surveyForm h3 span {
+  padding-right: 15px;
+}
+
+.surveySec .surveyForm .radioRow {
+  overflow: hidden;
+  width: 97%;
+  float: right;
+  margin: 0 0 30px;
+}
+
+.surveySec .surveyForm img {
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.surveySec .surveyForm textarea {
+  resize: none;
+}
+
+.surveySec .surveyForm input[type="submit"] {
+  display: inline-block;
+  font-size: 14px;
+  height: 38px;
+  line-height: 38px;
+  text-decoration: none;
+  padding: 0 50px;
+  color: #fff;
+  border: 0;
+  background: #611414;
+  margin-top: 25px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  outline: 0;
+}
+
+.surveySec .surveyForm input[type="submit"]:hover {
+  background-color: #292929;
+}
+.surveySec .surveyHead input[type="text"] {
+    height: 45px;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #000;
+    box-shadow: none;
+}
+.radioBtn:hover input[type="radio"]~.checkmark {
+    background-color: #ccc;
+}
+.checkmark {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border: 1px solid #858585;
+    border-radius: 50%;
+}
+.radioBtn {
+    display: inline-block;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    cursor: pointer;
+    font-size: 13px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-weight: 300;
+    width: 24%;
+    float: left;
+    margin-right: 5px;
+}
+.radioBtn input[type="radio"]:checked~.checkmark {
+    background-color: transparent;
+}
+.radioBtn input[type="radio"]:checked~.checkmark:after {
+    display: block;
+}
+.radioBtn .checkmark:after {
+    top: 3px;
+    left: 3px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #522e23;
+}
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.radioBtn input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+.radioBtn input[type="text"] {
+    border: 0;
+    border-bottom: 1px solid #000;
+    display: inline-block;
+    outline: 0;
+    width: 80%;
+    margin-left: 20px;
+}
+.surveyForm p {
+    text-transform: capitalize;
+}
+.radioBtn.centerRadio {
+    display: block;
+    width: 100%;
+}
+.radioBtn.centerRadio .checkmark {
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+.surveySec .surveyForm h3 {
+    color: #000;
+}
+.lookingFor h3 {
+    color: #787878;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 30px;
+}
+label.radioBtn {
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+}
+.radioBtn.long {
+    width: 60%;
+}
+/* End: surveySec css */

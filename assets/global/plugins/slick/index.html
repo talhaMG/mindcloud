@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Dashboard</title>
+<!-- Tell the browser to be responsive to screen width -->
+<meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+<!-- Bootstrap 3.3.7 -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Font Awesome -->
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/Admin.min.css">
+<!-- AdminLTE Skins. Choose a skin from the css/skins
+       folder instead of downloading all of them to reduce the load. -->
+<link rel="stylesheet" href="css/all-skins.min.css">
+<link href="css/custome.css" rel="stylesheet" type="text/css">
+
+<!-- Plugin CSS Starts-->
+<link href="slick/slick.css" rel="stylesheet" type="text/css">
+<link href="slick/slick-theme.css" rel="stylesheet" type="text/css">
+
+<!-- Google Font -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+</head>
+
+<body class="hold-transition skin-blue sidebar-mini">
+<header class="board_head">
+  <div class="container-fluid">
+    <div class="row flexRow">
+      <div class="col-md-3 col-sm-3 col-xs-12">
+        <div class="logo"> <a hef="#"><img src="img/logo.png" alt="merkery_logo" class=""> </a> </div>
+      </div>
+      <div class="col-md-4 col-sm-4 col-xs-12 flexCol">
+        <div class="custom-search-input">
+          <div class="input-group col-md-12">
+            <input type="text" class="search-query form-control" placeholder="Search Anything Here....">
+            <button class="btn " type="button"> <span> <i class="fa fa-search" aria-hidden="true"></i></span> </button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-5 col-xs-12 ">
+        <div class="header-rightside">
+          <ul class="list-inline header-top">
+            <li><a href="#"> <img src="img/hicon.png"> </a></li>
+            <a href="#"> </a>
+            <li><a href="#"></a><a href="#"> <img src="img/hicon1.png"> </a></li>
+            <a href="#"> </a>
+            <li><a href="#"></a><a href="#"> <img src="img/hicon2.png"> </a></li>
+            <a href="#"> </a>
+            <li class="dropdown"><a href="#"> <span class="media"> <span class="media-left"> <img src="img/prof.jpg" alt="user"> </span> <span class="media-body">
+              <h5> kendall Jenner </h5>
+              <p> Cheif Authority</p>
+              </span> </span> </a><a href="#" class="dropdown-toggle" data-toggle="dropdown"> <i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
+              <ul class="dropdown-menu">
+                <li> <a href="#" class="view btn-sm active">View Profile</a> </li>
+                <li> <a href="#" class="view btn-sm active">Logout</a> </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="wrapper">
+  <div class="container-fluid">
+    <header class="main-header"> 
+      
+      <!-- Header Navbar: style can be found in header.less -->
+      <nav class="navbar "> 
+        <!-- Sidebar toggle button--> 
+        <a href="#" class="sidebar-toggle" data-toggle="push-menu" role="button" id="navMenu"> <span class="sr-only">Toggle navigation</span> </a> </nav>
+    </header>
+    <!-- Left side column. contains the logo and sidebar -->
+    <aside class="main-sidebar"> 
+      <!-- sidebar: style can be found in sidebar.less -->
+      <section class="sidebar"> 
+        
+        <!-- sidebar menu: : style can be found in sidebar.less -->
+        <ul class="sidebar-menu" data-widget="tree">
+          <li> <a href="#"> <img src="img/mi.png">
+            <span>Home</span> <span class="pull-right-container"> 
+            <!-- <small class="label pull-right bg-green">new</small> --> 
+            </span> </a> </li>
+          <li class="treeview"> <a href="#"> <img src="img/mi1.png"><span>Stactics</span> <span class="pull-right-container"> 
+            <!--   <i class="fa fa-angle-left pull-right"></i> --> 
+            </span> </a> 
+            <!-- <ul class="treeview-menu">
+            <li><a href="pages/charts/chartjs.html"><i class="fa fa-circle-o"></i> ChartJS</a></li>
+            <li><a href="pages/charts/morris.html"><i class="fa fa-circle-o"></i> Morris</a></li>
+            <li><a href="pages/charts/flot.html"><i class="fa fa-circle-o"></i> Flot</a></li>
+            <li><a href="pages/charts/inline.html"><i class="fa fa-circle-o"></i> Inline charts</a></li>
+          </ul> --> 
+          </li>
+          <li class="treeview"> <a href="#"> <img src="img/mi2.png">  <span>User</span> </a> </li>
+          <li class="treeview"> <a href="#"> <img src="img/mi3.png">  <span>Settings</span> </a> </li>
+          <li class="treeview"> <a href="#"> <img src="img/mi4.png"> <span>Quires</span> </a> </li>
+        </ul>
+      </section>
+      <!-- /.sidebar --> 
+    </aside>
+    
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <div class="user-dashboard stuProle">
+        <div class="row flexRow">
+          <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 no-margin flexCol">
+            <div class="infoBox stbio">
+              <div class="imgox"> <img src="img/img1.jpg" class="img-responsive img-circle"> </div>
+              <div class="Boxtxt">
+                <h2> Student Name </h2>
+                <p> Student </p>
+                <div class="bioText">
+                  <h2> Personal Info </h2>
+                  <ul class="list-unstyled ">
+                    <li> Lorem Ipsum <span class="pull-right"> Lorem Ipsum </span> </li>
+                    <li> Lorem Ipsum <span class="pull-right"> Lorem Ipsum </span> </li>
+                    <li> Lorem Ipsum <span class="pull-right"> Lorem Ipsum </span> </li>
+                    <li> Lorem Ipsum <span class="pull-right"> Lorem Ipsum </span> </li>
+                    <li> Lorem Ipsum <span class="pull-right"> Lorem Ipsum </span> </li>
+                  </ul>
+                  <h2> Bio </h2>
+                  <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9">
+            <div class="current_course">
+              <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                  <div class="proceslines">
+                    <h2> Pitcher Summery </h2>
+                    <h3> Fastball Velocity<span class="pull-right"> 93.6% </span> </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%"> </div>
+                    </div>
+                    <h3> Spin Rate <span class="pull-right"> 24.01 </span> </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width:95%"> </div>
+                    </div>
+                    <h3> Pitch Movement <span class="pull-right"> 90 </span> </h3>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%"> </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 col-lg-8">
+                  <div class="myCurrent">
+                    <h2> My Current Courses </h2>
+                    <div class="cousr_slid">
+                      <div>
+                        <div class="cimt"> <img src="img/course1.png">
+                          <h4> Leaning Course </h4>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="cimt"> <img src="img/course1.png">
+                          <h4> Exercise </h4>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="cimt"> <img src="img/course1.png">
+                          <h4> Leaning Course </h4>
+                        </div>
+                      </div>
+                      <div>
+                        <div class="cimt"> <img src="img/course1.png">
+                          <h4> Leaning Course </h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <section class=" tabs_sec">
+              <div class="">
+                <div class="row">
+                  <div class="col-md-12">
+                    <ul id="nav-tabs-wrapper" class="nav nav-tabs nav-tabs-horizontal">
+                      <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true"> Lorem  Ipsum</a></li>
+                      <li class=""><a href="#tab1" data-toggle="tab" aria-expanded="false"> Lorem  Ipsum </a></li>
+                      <li class=""><a href="#tab1" data-toggle="tab" aria-expanded="false"> Lorem  Ipsum</a></li>
+                      <li class=""><a href="#tab1" data-toggle="tab" aria-expanded="false"> Lorem  Ipsum</a></li>
+                      <li class=""><a href="#tab1" data-toggle="tab" aria-expanded="false"> Lorem  Ipsum</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane fade active in" id="ammun">
+                        <div class="course_tim">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                              <div class="customChek">
+                                <label class="myckek">Lorem  Ipsum
+                                  <input type="radio" checked="checked" name="radio">
+                                  <span class="checkmark"></span> </label>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                              <p> simply dummy text of the printing and...... </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                              <h3> <i class="fa fa-clock-o" aria-hidden="true"></i> 12:24 AM </h3>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                              <div class="customChek">
+                                <label class="myckek">Lorem  Ipsum
+                                  <input type="radio" checked="checked" name="radio">
+                                  <span class="checkmark"></span> </label>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                              <p> simply dummy text of the printing and...... </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                              <h3> <i class="fa fa-clock-o" aria-hidden="true"></i> 12:24 AM </h3>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                              <div class="customChek">
+                                <label class="myckek">Lorem  Ipsum
+                                  <input type="radio" checked="checked" name="radio">
+                                  <span class="checkmark"></span> </label>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                              <p> simply dummy text of the printing and...... </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                              <h3> <i class="fa fa-clock-o" aria-hidden="true"></i> 12:24 AM </h3>
+                            </div>
+                          </div>
+                              <div class="row">
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                              <div class="customChek">
+                                <label class="myckek">Lorem  Ipsum
+                                  <input type="radio" checked="checked" name="radio">
+                                  <span class="checkmark"></span> </label>
+                              </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                              <p> simply dummy text of the printing and...... </p>
+                            </div>
+                            <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
+                              <h3> <i class="fa fa-clock-o" aria-hidden="true"></i> 12:24 AM </h3>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div role="tabpanel" class="tab-pane fade" id="htab2"> </div>
+                      <div role="tabpanel" class="tab-pane fade" id="ammun"> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <div class="preCourse">
+              <h2> My Previous Courses </h2>
+              <div class="preTxt">
+                <h3> Dear Trainee! You have no course in previous batches at the moment. </h3>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <!-- /.content --> 
+    </div>
+    <!-- /.content-wrapper --> 
+    
+  </div>
+</div>
+<div class="foter dash">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <p> Copyrights © 2019 Arizona DUI Services - All Rights Reserved </p>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+        <ul class="list-inline list-unstyled text-right">
+          <li> <a href="#">Privacy Policy </a> </li>
+          <li> <a href="#"> | </a> </li>
+          <li> <a href="#"> Terms &amp; Conditions </a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery 3 --> 
+<script src="js/jquery.min.js"></script> 
+<!-- jQuery UI 1.11.4 --> 
+<script src="js/jquery-ui.min.js"></script> 
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip --> 
+
+<!-- Bootstrap 3.3.7 --> 
+<script src="js/bootstrap.min.js"></script> 
+<script src="slick/slick.js"></script> 
+
+<!-- AdminLTE App --> 
+<script src="js/adminlte.min.js"></script> 
+<script>
+  $.widget.bridge('uibutton', $.ui.button);
+</script> 
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script> 
+<script>
+  $('body').on('click', '#navMenu', function(event) {
+    event.preventDefault();
+
+    if ( $('body').hasClass('sidebar-collapse') ) {
+      Cookies.set('menuOpen', true);
+    } else {
+      Cookies.set('menuOpen', false);
+    }
+
+  });
+
+  if ( Cookies.set('menuOpen') ) {
+    $('body').removeClass('sidebar-collapse');
+  } else {
+    $('body').addClass('sidebar-collapse');
+  }
+
+
+</script> 
+<script type="text/javascript">
+  
+  $('.cousr_slid').slick({
+        centerMode:true,
+        centerPadding: '150px',
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        arrows:true,
+        variableWidth: true,
+        variableHeight: true
+    });
+</script>
+</body>
+</html>
